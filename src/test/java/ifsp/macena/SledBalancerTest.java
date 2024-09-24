@@ -77,4 +77,13 @@ public class SledBalancerTest {
                 "S", sledBalancer.isBalanced(weights),
                 "The sled must be balanced for weights 4, 6 and 2.");
     }
+
+    @Test
+    void testCase2() {
+        SledBalancer sledBalancer = new SledBalancer();
+        int[] weights = {6, 6};
+        assertEquals(
+                "N", sledBalancer.isBalanced(weights),
+                "The sled must be unbalanced for weights 6 and 6.");
+    }
 }
