@@ -41,4 +41,17 @@ public class SledBalancerTest {
                 "S", sledBalancer.isBalanced(weights),
                 "With balanced weights, the sled should be balanced.");
     }
+
+    @Test
+    void testUnbalancedWithMultiplePresents() {
+        SledBalancer sledBalancer = new SledBalancer();
+        int[] weights = {10, 1, 6, 4};
+        assertEquals(
+                "N", sledBalancer.isBalanced(weights),
+                "Those present must unbalance the sled.");
+    }
+
+
+
+
 }
