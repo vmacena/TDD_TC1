@@ -79,6 +79,7 @@ public class SledBalancerTest {
 
 
     @Test
+    @DisplayName("Test case for balanced sled with weights 4, 6, 2")
     void testCase1() {
         SledBalancer sledBalancer = new SledBalancer();
         int[] weights = {4, 6, 2};
