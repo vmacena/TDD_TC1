@@ -1,5 +1,6 @@
 package ifsp.macena;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -7,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SledBalancerTest {
 
     @Test
+    @DisplayName("Test balanced sled with a single present")
     void testBalancedWithSinglePresent() {
         SledBalancer sledBalancer = new SledBalancer();
         int[] weights = {3};
