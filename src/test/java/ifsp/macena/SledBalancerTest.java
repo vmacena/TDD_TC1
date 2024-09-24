@@ -28,6 +28,7 @@ public class SledBalancerTest {
     }
 
     @Test
+    @DisplayName("Test unbalanced sled with two presents")
     void testUnbalancedWithTwoPresents() {
         SledBalancer sledBalancer = new SledBalancer();
         int[] weights = {6, 6};
