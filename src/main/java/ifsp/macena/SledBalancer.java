@@ -1,7 +1,7 @@
 package ifsp.macena;
 
 public class SledBalancer {
-    public String canBalance(int[] weights) {
+    public String isBalanced(int[] weights) {
         int leftSide = 0;
         int rightSide = 0;
 
