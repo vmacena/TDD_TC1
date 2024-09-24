@@ -14,4 +14,13 @@ public class SledBalancerTest {
                 "S", sledBalancer.isBalanced(weights),
                 "A single gift should always be balanced.");
     }
+
+    @Test
+    void testBalancedWithTwoPresents() {
+        SledBalancer sledBalancer = new SledBalancer();
+        int[] weights = {4, 2};
+        assertEquals(
+                "S", sledBalancer.isBalanced(weights),
+                "With a weight difference of 2, the sled must be balanced.");
+    }
 }
