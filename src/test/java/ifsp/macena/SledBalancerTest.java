@@ -51,7 +51,14 @@ public class SledBalancerTest {
                 "Those present must unbalance the sled.");
     }
 
-
+    @Test
+    void testBalancedWithEqualWeights() {
+        SledBalancer sledBalancer = new SledBalancer();
+        int[] weights = {5, 5, 5, 5};
+        assertEquals(
+                "S", sledBalancer.isBalanced(weights),
+                "Equal weights should result in a balanced sled.");
+    }
 
 
 }
