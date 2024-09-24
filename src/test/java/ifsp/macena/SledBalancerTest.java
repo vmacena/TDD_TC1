@@ -60,5 +60,12 @@ public class SledBalancerTest {
                 "Equal weights should result in a balanced sled.");
     }
 
-
+    @Test
+    void testUnbalancedWithHighDifference() {
+        SledBalancer sledBalancer = new SledBalancer();
+        int[] weights = {7, 1, 3, 6};
+        assertEquals(
+                "N", sledBalancer.isBalanced(weights),
+                "Too big a difference could unbalance the sled.");
+    }
 }
