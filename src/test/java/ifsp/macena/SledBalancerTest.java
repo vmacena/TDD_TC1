@@ -68,6 +68,7 @@ public class SledBalancerTest {
     }
 
     @Test
+    @DisplayName("Test unbalanced sled with high difference")
     void testUnbalancedWithHighDifference() {
         SledBalancer sledBalancer = new SledBalancer();
         int[] weights = {7, 1, 3, 6};
@@ -75,6 +76,7 @@ public class SledBalancerTest {
                 "N", sledBalancer.isBalanced(weights),
                 "Too big a difference could unbalance the sled.");
     }
+
 
     @Test
     void testCase1() {
